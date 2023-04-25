@@ -44,3 +44,18 @@ For Example:
 ptr = (float*) calloc(25, sizeof(float));
 This statement allocates contiguous space in memory for 25 elements each with the size of the float.
  ![image](https://user-images.githubusercontent.com/125941580/230759042-e01705bd-7750-4bc0-8409-54af360f5345.png)
+ 
+ # C realloc() method
+ 
+ “realloc” or “re-allocation” method in C is used to dynamically change the memory allocation of a previously allocated memory. In other words, if the memory previously allocated with the help of malloc or calloc is insufficient, realloc can be used to dynamically re-allocate memory. re-allocation of memory maintains the already present value and new blocks will be initialized with the default garbage value.
+ 
+ Syntax: 
+
+ptr = realloc(ptr, newSize);
+
+where ptr is reallocated with new size 'newSize'.
+
+![image](https://user-images.githubusercontent.com/125941580/234309283-25a997fa-2b97-4a31-a998-664e9c0c3541.png)
+
+If space is insufficient, allocation fails and returns a NULL pointer.
+
