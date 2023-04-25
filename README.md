@@ -1,4 +1,16 @@
-# Memory-allocation
+#  Dynamic Memory-allocation
+# Introduction
+This C program demonstrates the use of dynamic memory allocation in C using the malloc() and realloc() functions. The program allocates memory for two integer variables using malloc(), assigns values to them, and then uses realloc() to change the size of the memory block pointed to by one of the pointers.
+
+![image](https://user-images.githubusercontent.com/125941580/234309635-75e2219a-c20d-4af7-adfa-a612e203979f.png)
+
+# Algorithm
+1.Allocate memory for two integer variables using malloc().
+2.Assign a value to the first variable using the first pointer.
+3.Increment the first pointer to point to the second variable.
+4.Assign a value to the second variable using the first pointer.
+5.Use realloc() to change the size of the memory block pointed to by the first pointer.
+6.Assign a value to the newly allocated memory location using the new pointer returned by realloc().
 
 Since C is a structured language, it has some fixed rules for programming. One of them includes changing the size of an array. An array is a collection of items stored at contiguous memory locations. 
 
@@ -58,4 +70,17 @@ where ptr is reallocated with new size 'newSize'.
 ![image](https://user-images.githubusercontent.com/125941580/234309283-25a997fa-2b97-4a31-a998-664e9c0c3541.png)
 
 If space is insufficient, allocation fails and returns a NULL pointer.
+
+# Uses of Dynamic Memory Allocation
+
+Dynamic memory allocation is useful in situations where we don't know the size of the data that needs to be stored in memory beforehand. It allows us to allocate memory for data at runtime and release it when it's no longer needed. The malloc() and realloc() functions provide a flexible way to manage memory dynamically.
+
+# Applications
+
+Dynamic memory allocation is used in a wide variety of applications, such as:
+
+1.Implementing data structures like linked lists, stacks, and queues.
+2.Allocating memory for variables and arrays in programs that need to handle varying amounts of data.
+3.Implementing dynamic libraries and plugins that can be loaded and unloaded at runtime.
+
 
